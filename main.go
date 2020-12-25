@@ -1,4 +1,5 @@
 // https://golang.org/doc/articles/wiki/
+// https://golang.org/pkg/net/http
 
 package main
 
@@ -13,6 +14,5 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-    http.HandleFunc("/", handler)
-    log.Fatal(http.ListenAndServe(":8080", nil))
+    log.Fatal(http.ListenAndServe(":8080", http.FileServer(http.Dir("."))))
 }
