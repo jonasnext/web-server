@@ -1,4 +1,8 @@
-# go web server 🌎 🌍 🌏
+# ![go](img/logo.svg)
+
+# 🌎 🌍 🌏 
+
+## go web server
 
 ```
 go run main.go
